@@ -9,7 +9,7 @@ frame_height = int(camera.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 codec = cv2.VideoWriter_fourcc(*'XVID')
 
-recoder = cv2.VideoWriter("output_images/saving_vedio.avi",codec,20,(frame_width,frame_height))
+recoder = cv2.VideoWriter("video/saving_vedio.avi",codec,20,(frame_width,frame_height))
 
 while True:
     result , frame = camera.read()
